@@ -1,0 +1,260 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 53);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(13, 13, 92);
+}
+
+nav .left {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 10%;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    flex-wrap: wrap;
+}
+
+.firstsection>div {
+    width: 45%;
+    text-align: center;
+}
+
+.leftsection {
+    font-size: 2rem;
+}
+
+.leftsection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.leftsection .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.rightsection img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.purple {
+    color: rgb(141, 71, 206);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: rgb(141, 71, 206);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    padding: 30px;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.secondsection .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.secondsection .vertical {
+    flex: 1 1 22%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-top1, .image-top2, .image-top3, .image-top4 {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.vertical-title1, .vertical-title2, .vertical-title3, .vertical-title4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.vertical-desc1, .vertical-desc2, .vertical-desc3, .vertical-desc4 {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+footer {
+    background-color: #0e0e1a;
+    padding: 40px 10%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 200px;
+}
+
+.secondfooter .footer-rights {
+    text-align: center;
+    color: black;
+    padding: 12px 0;
+    background-color: white;
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .firstsection > div {
+        width: 100%;
+    }
+
+    .secondsection {
+        padding: 20px;
+    }
+
+    .secondsection .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondsection .vertical {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .firstsection .leftsection {
+        font-size: 1.6rem;
+    }
+
+    .firstsection .btn {
+        font-size: 18px;
+    }
+
+    .secondsection h1 {
+        font-size: 1.5rem;
+    }
+
+    .secondsection .vertical-title1,
+    .secondsection .vertical-title2,
+    .secondsection .vertical-title3,
+    .secondsection .vertical-title4 {
+        font-size: 1rem;
+    }
+
+    .secondsection .vertical-desc1,
+    .secondsection .vertical-desc2,
+    .secondsection .vertical-desc3,
+    .secondsection .vertical-desc4 {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-first, .footer-second, .footer-third, .footer-fourth {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer-rights {
+        font-size: 0.8rem;
+    }
+}
